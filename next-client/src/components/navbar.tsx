@@ -12,7 +12,7 @@ export function Navbar() {
       <div className="navbar mx-auto max-w-xl">
         <div className="navbar-start">
           <Link href="/" className="btn btn-ghost text-xl">
-            PB + Next.js
+            PB-Next-client
           </Link>
         </div>
         <div className="navbar-end">
