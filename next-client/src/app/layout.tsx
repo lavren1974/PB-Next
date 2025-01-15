@@ -1,4 +1,6 @@
+// app/layout.tsx
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import { PocketBaseProvider } from "@/components/pocketbase-provider";
 import { createServerClient } from "@/lib/pocketbase/server";
 import { cn } from "@/lib/utils";
@@ -31,17 +33,29 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(geistSans.variable, geistMono.variable, "antialiased")}
-      data-theme="lofi"
+      className={cn(geistSans.variable, geistMono.variable, "antialiased h-full")}
+      data-theme="lofi" // Default theme
+      suppressHydrationWarning
     >
-      <body>
+      <body className="min-h-screen flex flex-col bg-base-100">
         <PocketBaseProvider
           initialToken={client.authStore.token}
           initialUser={client.authStore.record}
         >
           <Navbar />
-          <div className="mx-auto max-w-xl px-4 py-8">{children}</div>
+          <main className="flex-grow">
+            <div className="mx-auto max-w-7xl px-4 py-12">{children}</div>
+          </main>
+          <Footer />
         </PocketBaseProvider>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            try {
+              const theme = localStorage.getItem('theme') || 'lofi';
+              document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {}
+          `
+        }} />
       </body>
     </html>
   );

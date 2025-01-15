@@ -21,6 +21,6 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["lofi"],
+    themes: ["lofi", "dark"], // specify the themes we want to use
   },
 } satisfies Config;
