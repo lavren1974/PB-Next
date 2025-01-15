@@ -41,7 +41,7 @@ export function Navbar() {
               isActive('/') ? 'text-primary' : 'hover:text-primary'
             }`}
           >
-            PB-Next-client
+            PB-Next
           </Link>
         </div>
 

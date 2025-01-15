@@ -1,10 +1,10 @@
 # PB-Next
 
-## next-client
+## web
 
 `npx create-next-app@latest`
 
-√ What is your project named? ... next-client
+√ What is your project named? ... web
 
 √ Would you like to use TypeScript? ... No / `Yes`
 
@@ -22,7 +22,7 @@
 
 `pnpm add pocketbase clsx tailwind-merge`
 
-`cd next-client`
+`cd web`
 
 `pnpm dev`
 

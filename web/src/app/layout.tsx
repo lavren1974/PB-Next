@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PocketBase + Next.js",
+  title: "PB-Next",
   description: "A simple example of PocketBase + Next.js",
 };
 

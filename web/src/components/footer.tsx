@@ -69,7 +69,7 @@ export function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://github.com/jianyuan/pocketbase-nextjs-auth"
+                  href="https://github.com/shadowchess-org/PB-Next"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -85,7 +85,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <div className="flex flex-col space-y-4">
               <a 
-                href="https://github.com/yourusername"
+                href="https://github.com/shadowchess-org"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
