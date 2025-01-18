@@ -4,3 +4,5 @@
 /pocketbase/pb_data/auxiliary.db-shm
 /web/.env.local
 /web/.env
+/deploy.md
+/pocketbase
